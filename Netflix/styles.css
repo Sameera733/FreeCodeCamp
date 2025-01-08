@@ -1,0 +1,217 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #141414;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    background: url('netflixbackground.jpg') no-repeat center center/cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    position: fixed;
+    /* width: 100%; */
+    z-index: 10;
+  }
+
+  .navbar::after {
+    content : '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 20px 10px 20px #000000, inset -20px -10px 20px #000000;
+  }
+
+  .navbar .top {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width:  170px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+}
+
+select {
+    width: 90px;
+    height: 35px;
+    margin: 10%;
+    padding: 8px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+  .profile {
+    width: 20%;
+    height: 50%;
+  }
+
+  .profile button {
+    padding: 7px 13px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .profile button:hover {
+    background-color: #f40612;
+  }
+  
+   /* button {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    border-radius: 10px;
+  }
+  
+   button:hover {
+    color: #e50914;
+  }
+  
+  .profile button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #e50914;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .profile button:hover {
+    background-color: #f40612;
+  } */
+  
+  /* Hero Section */
+  /* .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://assets.nflxext.com/ffe/siteui/vlv3/1e0e8b96-71a3-4a93-b51b-5cf4ddf7ee96/92333904-9bb7-48b1-99c0-1b2ec39be784/US-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg') 
+      no-repeat center/cover;
+  } */
+  
+  /* .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    color: #fff;
+  } */
+
+
+  .hero-content {
+    width: 60%;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.3;
+    margin: 0 0 2rem;
+}
+
+.hero-content #pp {
+    color : #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.05;
+    margin: 0 0 2rem;
+}
+
+.hero-content p {
+    color : #fff;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+}
+
+
+
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .cta {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cta input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
+  
+  .cta button {
+    padding: 10px 20px;
+    font-size: 23px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta button:hover {
+    background-color: #f40612;
+  }
+  
